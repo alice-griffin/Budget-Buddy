@@ -1,0 +1,333 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    background-image: white;
+    padding: 0%;
+    margin: 0%;
+}
+
+.budget-buddy { 
+    background: rgba(64,167,73,1);
+    width: 100%; 
+    line-height: 40px; 
+    margin-top: 0; 
+}
+
+.title {
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: white; 
+    font-size: 50px; 
+}
+
+.inputFormat, .tableFormat {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-bottom: 35px;
+}
+
+
+.tableFormat {
+    padding: 0 8px 20px 8px;
+}
+
+
+
+#firstHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 90%;
+    font-size: 1.6em;
+    font-family: 'Amatic SC', cursive;
+}
+
+
+#header-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+#header-container p {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+    font-size: 2em;
+    font-size-adjust: inherit;  
+    border: 1px solid black; 
+    background-color: white;
+}
+
+.header-container {
+    width: 45%;
+    font-family: 'Amatic SC', cursive;
+    font-size: small;
+    text-align: center;
+
+}
+
+
+.header-container h1 {
+    margin-bottom: -25px;
+    font-size: 30px;
+}
+
+
+#budget-input-section {
+    padding-bottom: 10px;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    text-align-last: center;
+}
+
+
+#what-is-your-budget {
+    height: 20px;
+    padding: 2px 2px 0px 2px;
+    margin-bottom: 2px;
+    opacity: .8;
+    border: 0;
+    border: 3px solid black;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#what-is-your-budget::placeholder {
+    color: black;
+    font-size: 1.1em;
+}
+
+
+#submit-your-budget {
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none; 
+    height: 30px;
+    font-size: 14px;
+    background-color: rgba(64,167,73,1);
+    color: white; 
+    font-family: 'Raleway', sans-serif;
+    cursor: pointer; 
+}
+
+#submit-your-budget:hover {
+    background-color: white; 
+    color: rgba(64,167,73,1);
+    border: 2px solid rgba(64,167,73,1);
+}
+
+
+#purchaseInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+    width: 90%;
+}
+
+
+.paragraphInput {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    padding: 5px; 
+    /*margin: -2px;*/
+    overflow: visible;
+}
+
+
+.paragraphInput input {
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    height: 40px;
+    border-radius: 10px; 
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.paragraphInput input::placeholder {
+    color: black;
+    font-size: 120%;
+    text-underline-position: below;
+    text-align-last: left;
+    padding-left: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.paragraphInput select {
+    width: 100%;
+    border: 0;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align-last: center;
+    height: 50px;
+    background-color: white;
+    font-size: 105%;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+#addButton {
+    width: 100%;
+    justify-content: center;
+    height: 50px;
+    font-size: 1em;
+    border: 0;
+    background-color:rgba(64,167,73,1);
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 10px;
+    color: white; 
+    font-size: 1.5em;
+    cursor: pointer; 
+}
+
+#addButton:hover {
+    background-color: white; 
+    color: rgba(64,167,73,1);
+    border: 2px solid rgba(64,167,73,1);
+}
+
+h3 {
+    margin-bottom: 0px;
+    font-size: 1.5em;
+    margin-bottom: 2px;
+}
+
+table {
+    width: 100%;
+    border: 1px solid black;
+    border-spacing: 0px;
+    border-collapse: collapse;
+    font-family: 'Raleway', sans-serif;
+}
+
+td, th {
+    flex-wrap: wrap;
+}
+
+
+.description {
+    flex: 1;
+    width: 50%;
+    text-align: center;
+}
+
+
+.date {
+    flex: 1;
+    width: 25%;
+    text-align: center;
+}
+
+
+.price {
+    flex: 1;
+    width: 25%;
+    text-align: center;
+}
+
+
+th {
+    margin-top: 0px;
+    padding-top: 0px;
+    width: 30%;
+    border: 1px solid black;
+    text-align: left;
+    font-family: 'Raleway', sans-serif;
+    background-color: white; 
+}
+
+.font {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+table td {
+    text-align: left;
+    border: 1px solid black;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Amatic SC', cursive;
+}
+
+.gif{
+    display: none;
+}
+
+#clothingTable {
+    margin-bottom: 15px; 
+}
+
+#trash-icon {
+    display: none; 
+}
+
+@media (min-width: 1025px){
+
+    body {
+        background-image: url(image-from-rawpixel-id-2342666-jpeg.jpg);
+        background-repeat: no-repeat;
+        background-size: 200%; 
+    }
+
+    .tableFormat{
+        width: 40%;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        border-radius: 10px;
+        float: right;
+        margin-right: 0px;
+        margin-left: auto;
+        position: relative; top: -330px;
+    }
+
+    #purchaseInfo{
+        /* display: flex; */
+        float: left;
+        /* flex-direction: column; */
+        /* justify-content: space-between; */
+        align-items: baseline;
+        width: 40%;
+        float: left;
+        margin-right: auto;
+        margin-left: 0px;
+        /* margin-bottom: 0px; */
+        position: relative; top: 40px;
+    }
+
+    .gif{
+        border: 5px solid white; 
+        display: block;
+        position: relative; top: -325px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        box-shadow: 0px 0px 10px #fff;
+    }
+    .budget-title {
+        font-size: 70px;
+    }
+
+}
